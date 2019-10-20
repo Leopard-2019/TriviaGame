@@ -1,0 +1,146 @@
+body {
+    font-size: 20px;
+    font-family: monospace;
+}
+
+header {
+    color: blue;
+    font-size: 60px;
+    text-align: center;
+    display: inline;
+    margin-left: 190px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#container {
+    margin: 20px auto;
+    background-color: lightyellow;
+    height: 700px;
+    width: 900px;
+    border-radius: 5px;
+    position: relative;
+}
+
+#start {
+    font-size: 1.5em;
+    width: 250px;
+    height: 50px;
+    border: 2px solid lightgrey;
+    text-align: center;
+    cursor: pointer;
+    color: black;
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    background: rgb(207, 171, 171);
+}
+
+#start:hover {
+    border: 3px solid lightseagreen;
+    color: lightseagreen;
+}
+
+#qImg {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#qImg img {
+    width: 200px;
+    height: 200px;
+    border-top-left-radius: 5px;
+}
+
+#question {
+    width: 500px;
+    height: 125px;
+    position: absolute;
+    left: 200px;
+    top: 250px;
+}
+
+#question p {
+    margin: 0;
+    padding: 15px;
+    font-size: 1.25em;
+}
+
+#choices {
+    width: 480px;
+    position: absolute;
+    left: 280px;
+    top: 400px;
+    padding: 10px
+}
+
+.choice {
+    display: block;
+    width: 250px;
+    text-align: center;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.choice:hover {
+    border: 2px solid grey;
+    font-weight: bold;
+    background: pink;
+}
+
+.timer {
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    top: 100px;
+    left: 300px;
+}
+
+.bx4 {
+    width: 200px;
+    height: 20px;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+#counter {
+    font-size: 30px;
+}
+
+#myVideo {
+    position: absolute;
+    top: 150px;
+    left: 300px;
+}
+
+#qq {
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    top: 450px;
+    left: 250px;
+
+}
+
+#qq1 {
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    top: 500px;
+    left: 300px;
+}
+
+#qq2 {
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    top: 550px;
+    left: 290px;
+}
