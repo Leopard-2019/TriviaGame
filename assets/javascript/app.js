@@ -1,3 +1,4 @@
+//Declaration of variable #1
 const start = document.getElementById("start");
 const quiz = document.getElementById("quiz");
 const question = document.getElementById("question");
@@ -7,6 +8,9 @@ const cChoice = document.getElementById("c");
 const dChoice = document.getElementById("d");
 const counter = document.getElementById("counter");
 
+// object arrays composed by seven questio about MLB questions
+// there was not time to include the figures/videos related to the answers
+// my apologies for that
 
 let myQuestion = [
     {
@@ -61,6 +65,7 @@ let myQuestion = [
     }
 ];
 
+//Declaration of variable #2
 const lastQuestionIndex = myQuestion.length - 1;
 let runningQuestionIndex = 0;
 let count = 0;
@@ -69,7 +74,9 @@ let CLOCK;
 let score = 0;
 let uscore = 0;
 
-
+//function that creates the question and choices
+// this function will be invoked for every question until 
+// the runningQuestionIndex is equal to the index of the last question.
 function sendQuestion() {
     let q = myQuestion[runningQuestionIndex];
     question.innerHTML = "<p>" + q.question + "</p>";
@@ -79,8 +86,10 @@ function sendQuestion() {
     dChoice.innerHTML = q.d;
 };
 
+// create the button that trigger the function "startQuiz" when click the button start
 start.addEventListener("click", startQuiz);
 
+// function startQuiz that represent the engine containing the functions that make the program works
 function startQuiz() {
     start.style.display = "none";
     sendQuestion();
@@ -89,6 +98,11 @@ function startQuiz() {
     CLOCK = setInterval(counterTrivia, 1000);
 }
 
+/* function that control if the counter has reached the question time set for every question
+ the question time has been set to 15 s for every question
+this function also checks (with the first else)  if the 15 sec has been reached, without clicking any choice anwers,
+if so, it will trigger the function answers wrong, then will invoke the function "sendQuestion" to
+display another question (with the if contained in this else).*/
 
 function counterTrivia() {
     if (count <= questionTime) {
@@ -113,6 +127,11 @@ function counterTrivia() {
     }
 }
 
+/*this function check if the answer given by the player has been matched the correct answer
+if the answer given is wrong (the first else), it will trigger the function wrong.
+if the counter is equal to 0, and the iterator running QuestionIndex is not equal to the
+last question. then the sendQuestion is invoked to go for another question, otherwise
+the game finish*/
 function checkAnswer(answer) {
     if (answer === myQuestion[runningQuestionIndex].correctAnswer) {
         score++;
@@ -131,6 +150,8 @@ function checkAnswer(answer) {
     }
 
 }
+/* function that display the answer is correct, also display the numbers of question that has been correctly guessed, 
+ the other way around as well*/
 
 function answerCorrect() {
     quiz.style.display = 'none';
@@ -139,6 +160,9 @@ function answerCorrect() {
     document.getElementById("qq1").textContent = "Correct Answers:" + score;
     document.getElementById("qq2").textContent = "InCorrect Answers:" + uscore;
 }
+
+/* function that display the answer is incorrect, also display the numbers of question that has been correctly guessed, and
+ the other way around as well*/
 function answerWrong() {
     quiz.style.display = 'none';
     document.getElementById("qq3").style = 'block';
