@@ -15,6 +15,7 @@ header {
 #container {
     margin: 20px auto;
     background-color: lightyellow;
+    opacity: 0.9;
     height: 700px;
     width: 900px;
     border-radius: 5px;
@@ -26,32 +27,19 @@ header {
     width: 250px;
     height: 50px;
     border: 2px solid lightgrey;
-    text-align: center;
+    text-align: auto;
     cursor: pointer;
     color: black;
     position: absolute;
+    padding-left:100px;
     top: 300px;
-    left: 300px;
+    left: 320px;
     background: rgb(207, 171, 171);
 }
 
 #start:hover {
-    border: 3px solid lightseagreen;
-    color: lightseagreen;
-}
-
-#qImg {
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-}
-
-#qImg img {
-    width: 200px;
-    height: 200px;
-    border-top-left-radius: 5px;
+    border: 3px solid blue;
+    color: blue;
 }
 
 #question {
@@ -114,7 +102,7 @@ header {
 #myVideo {
     position: absolute;
     top: 150px;
-    left: 300px;
+    left: 320px;
 }
 
 #qq {
@@ -123,7 +111,7 @@ header {
     font-weight: bold;
     position: absolute;
     top: 450px;
-    left: 250px;
+    left: 280px;
 
 }
 
@@ -133,7 +121,7 @@ header {
     font-weight: bold;
     position: absolute;
     top: 500px;
-    left: 300px;
+    left: 320px;
 }
 
 #qq2 {
@@ -142,5 +130,26 @@ header {
     font-weight: bold;
     position: absolute;
     top: 550px;
-    left: 290px;
+    left: 320px;
+}
+#reset {
+    font-size: 1.5em;
+    width: 250px;
+    height: 50px;
+    border: 2px solid lightgrey;
+    text-align: center;
+    cursor: pointer;
+    color: black;
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    background: rgb(207, 171, 171);
+    position: absolute;
+    top: 600px;
+    left: 330px;
+}
+
+#reset:hover {
+    border: 3px solid blue;
+    color: blue;
 }
