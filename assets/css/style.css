@@ -153,3 +153,25 @@ header {
     border: 3px solid blue;
     color: blue;
 }
+
+#ipp1 {
+    font-size: 1.5em;
+    width: 150px;
+    height: 50px;
+    border: 2px solid lightgrey;
+    text-align: center;
+    cursor: pointer;
+    color: black;
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    background: rgb(207, 171, 171);
+    position: absolute;
+    top: 600px;
+    left: 375px;
+}
+
+#ipp1:hover {
+    border: 3px solid blue;
+    color: blue;
+}
