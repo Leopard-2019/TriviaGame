@@ -196,12 +196,14 @@ function answerWrong() {
     document.getElementById("myVideo").src = myQuestion[runningQuestionIndex].imgSrc;
 }
 
-//re-start button that is displayed at the end of the game
+/*re-start button that is displayed at the end of the game*/
+
 function rReset(){
     window.location.reload(false);
 }
 
-// continue button that is display when answers/ stats are displayed, and allow to get to the nex question once is clicked
+/*continue button that is display when answers/ stats are displayed, and allow to get to the nex question once is clicked*/
+
 function conT(){
     count=0;
     CLOCK = setInterval(counterTrivia, 2000);
