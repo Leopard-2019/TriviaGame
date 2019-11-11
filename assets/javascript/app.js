@@ -8,6 +8,7 @@ const cChoice = document.getElementById("c");
 const dChoice = document.getElementById("d");
 const counter = document.getElementById("counter");
 const reset = document.getElementById("reset");
+const reset2 = document.getElementById("ipp1");
 
 // object arrays composed by seven major league baseball questions
 
@@ -122,10 +123,11 @@ function counterTrivia() {
         document.getElementById("qq1").textContent = '';
         document.getElementById("qq2").textContent = '';
         document.getElementById("myVideo").src = '';
+        reset2.style.display = 'none';
         count++;
     }
     else {
-        count = 0;
+        clearInterval(CLOCK);
         answerWrong();
         if (runningQuestionIndex < lastQuestionIndex) {
             runningQuestionIndex++;
@@ -145,9 +147,11 @@ the game is over*/
 function checkAnswer(answer) {
     if (answer === myQuestion[runningQuestionIndex].correctAnswer) {
         score++;
+        clearInterval(CLOCK);
         answerCorrect();
     }
     else {
+        clearInterval(CLOCK);
         answerWrong();
     }
 
@@ -170,6 +174,8 @@ function checkAnswer(answer) {
 function answerCorrect() {
     quiz.style.display = 'none';
     document.getElementById("qq3").style = 'block';
+    reset2.style.display = 'block';
+    reset2.addEventListener("click", conT);
     document.getElementById("qq").textContent = "The Answer is Correct!";
     document.getElementById("qq1").textContent = "Correct Answers:" + score;
     document.getElementById("qq2").textContent = "InCorrect Answers:" + uscore;
@@ -181,6 +187,8 @@ function answerCorrect() {
 function answerWrong() {
     quiz.style.display = 'none';
     document.getElementById("qq3").style = 'block';
+    reset2.style.display = 'block';
+    reset2.addEventListener("click", conT);
     uscore += 1;
     document.getElementById("qq").textContent = "The Answer is not Correct!";
     document.getElementById("qq1").textContent = "Correct Answers:" + score;
@@ -188,8 +196,14 @@ function answerWrong() {
     document.getElementById("myVideo").src = myQuestion[runningQuestionIndex].imgSrc;
 }
 
+//re-start button that is displayed at the end of the game
 function rReset(){
     window.location.reload(false);
 }
 
+// continue button that is display when answers/ stats are displayed, and allow to get to the nex question once is clicked
+function conT(){
+    count=0;
+    CLOCK = setInterval(counterTrivia, 2000);
+}
 
