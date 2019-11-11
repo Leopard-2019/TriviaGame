@@ -106,7 +106,7 @@ function startQuiz() {
     sendQuestion();
     quiz.style.display = 'block';
     counterTrivia();
-    CLOCK = setInterval(counterTrivia, 2000);
+    CLOCK = setInterval(counterTrivia, 1000);
 }
 
 /* function that controls if the counter has reached the question time set for every question
@@ -206,6 +206,6 @@ function rReset(){
 
 function conT(){
     count=0;
-    CLOCK = setInterval(counterTrivia, 2000);
+    CLOCK = setInterval(counterTrivia, 1000);
 }
 
