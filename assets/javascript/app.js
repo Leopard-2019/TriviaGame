@@ -8,6 +8,8 @@ const cChoice = document.getElementById("c");
 const dChoice = document.getElementById("d");
 const counter = document.getElementById("counter");
 const reset = document.getElementById("reset");
+const reset2 = document.getElementById("ipp1");
+
 
 // object arrays composed by seven major league baseball questions
 
@@ -105,7 +107,7 @@ function startQuiz() {
     sendQuestion();
     quiz.style.display = 'block';
     counterTrivia();
-    CLOCK = setInterval(counterTrivia, 2000);
+    CLOCK = setInterval(counterTrivia, 1000);
 }
 
 /* function that controls if the counter has reached the question time set for every question
@@ -118,18 +120,21 @@ function counterTrivia() {
     if (count <= questionTime) {
         counter.innerHTML = count;
         quiz.style.display = 'block';
+        document.getElementById("qq3").style = ''
         document.getElementById("qq").textContent = '';
         document.getElementById("qq1").textContent = '';
         document.getElementById("qq2").textContent = '';
         document.getElementById("myVideo").src = '';
+        reset2.style.display = 'none';
         count++;
     }
     else {
-        count = 0;
+        clearInterval(CLOCK);
         answerWrong();
         if (runningQuestionIndex < lastQuestionIndex) {
             runningQuestionIndex++;
-            sendQuestion();
+
+        sendQuestion();
         }
         else {
             clearInterval(CLOCK);
@@ -145,16 +150,20 @@ the game is over*/
 function checkAnswer(answer) {
     if (answer === myQuestion[runningQuestionIndex].correctAnswer) {
         score++;
+        clearInterval(CLOCK);
         answerCorrect();
     }
     else {
+        clearInterval(CLOCK);
         answerWrong();
     }
 
-    count = 0;
+
     if (runningQuestionIndex < lastQuestionIndex) {
         runningQuestionIndex++;
+
         sendQuestion();
+
     }
     else {
         clearInterval(CLOCK);
@@ -170,6 +179,8 @@ function checkAnswer(answer) {
 function answerCorrect() {
     quiz.style.display = 'none';
     document.getElementById("qq3").style = 'block';
+    reset2.style.display = 'block';
+    reset2.addEventListener("click", conT);
     document.getElementById("qq").textContent = "The Answer is Correct!";
     document.getElementById("qq1").textContent = "Correct Answers:" + score;
     document.getElementById("qq2").textContent = "InCorrect Answers:" + uscore;
@@ -181,6 +192,8 @@ function answerCorrect() {
 function answerWrong() {
     quiz.style.display = 'none';
     document.getElementById("qq3").style = 'block';
+    reset2.style.display = 'block';
+    reset2.addEventListener("click", conT);
     uscore += 1;
     document.getElementById("qq").textContent = "The Answer is not Correct!";
     document.getElementById("qq1").textContent = "Correct Answers:" + score;
@@ -190,6 +203,11 @@ function answerWrong() {
 
 function rReset(){
     window.location.reload(false);
+}
+
+function conT(){
+    count=0;
+    CLOCK = setInterval(counterTrivia, 1000);
 }
 
 
