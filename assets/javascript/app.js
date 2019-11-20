@@ -1,5 +1,4 @@
 //Declaration of variables #1
-
 const start = document.getElementById("start");
 const quiz = document.getElementById("quiz");
 const question = document.getElementById("question");
@@ -78,7 +77,7 @@ const lastQuestionIndex = myQuestion.length - 1;
 let runningQuestionIndex = 0;
 let count = 15;
 // the question time is set to 15s for every question
-const questionTime = 15; // 15s
+//const questionTime = 15; // 15s
 let CLOCK;
 let score = 0;
 let uscore = 0;
@@ -117,7 +116,7 @@ if so, it will trigger the function answersWrong, then will invoke the function 
 display another question (with the if contained in this else).*/
 
 function counterTrivia() {
-    if (count <= questionTime) {
+    if (count > 0) {
         counter.innerHTML = count;
         quiz.style.display = 'block';
         document.getElementById("qq3").style = ''
