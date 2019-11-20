@@ -1,4 +1,5 @@
 //Declaration of variables #1
+
 const start = document.getElementById("start");
 const quiz = document.getElementById("quiz");
 const question = document.getElementById("question");
@@ -9,7 +10,6 @@ const dChoice = document.getElementById("d");
 const counter = document.getElementById("counter");
 const reset = document.getElementById("reset");
 const reset2 = document.getElementById("ipp1");
-
 
 // object arrays composed by seven major league baseball questions
 
@@ -76,7 +76,7 @@ let myQuestion = [
 //Declaration of variables #2
 const lastQuestionIndex = myQuestion.length - 1;
 let runningQuestionIndex = 0;
-let count = 0;
+let count = 15;
 // the question time is set to 15s for every question
 const questionTime = 15; // 15s
 let CLOCK;
@@ -111,7 +111,7 @@ function startQuiz() {
 }
 
 /* function that controls if the counter has reached the question time set for every question
- the question time has been set to 15s for every question
+the question time has been set to 15s for every question
 this function also checks (with the first else)  if the 15 sec has been reached, without selecting any choice anwer,
 if so, it will trigger the function answersWrong, then will invoke the function "sendQuestion" to
 display another question (with the if contained in this else).*/
@@ -126,7 +126,7 @@ function counterTrivia() {
         document.getElementById("qq2").textContent = '';
         document.getElementById("myVideo").src = '';
         reset2.style.display = 'none';
-        count++;
+        count--;
     }
     else {
         clearInterval(CLOCK);
@@ -201,13 +201,14 @@ function answerWrong() {
     document.getElementById("myVideo").src = myQuestion[runningQuestionIndex].imgSrc;
 }
 
+/*re-start button that is displayed at the end of the game*/
+
 function rReset(){
     window.location.reload(false);
 }
 
 function conT(){
-    count=0;
+    count=15;
     CLOCK = setInterval(counterTrivia, 1000);
 }
-
 
