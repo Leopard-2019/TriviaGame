@@ -1,4 +1,4 @@
-TRIVIA GAME - ADVANCED ASSIGNMENT #5.
+TRIVIA GAME
 
 I have created a Trivia game using JavaScript for the logic and jQuery to manipulate HTML. This is how this game works:
 
