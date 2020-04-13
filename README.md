@@ -17,4 +17,4 @@ I have created a Trivia game using JavaScript for the logic and jQuery to manipu
 
 4. On the final screen, the number of correct answers, incorrect answers, and an option to restart the game are displayed.
 
-this app can be accessed by this link: https://leopard-2019.github.io/TriviaGame/
+This app can be accessed by this link: https://leopard-2019.github.io/TriviaGame/
