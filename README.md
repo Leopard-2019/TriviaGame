@@ -1,4 +1,4 @@
-#TRIVIA GAME
+**#TRIVIA GAME**
 
 I have created a Trivia game about baseball using JavaScript for the logic and jQuery to manipulate HTML. This is how this game works:
 
