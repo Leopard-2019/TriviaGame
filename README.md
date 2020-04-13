@@ -19,4 +19,4 @@ I have created a Trivia game about baseball using JavaScript for the logic and j
 
 This app can be accessed by this link: https://leopard-2019.github.io/TriviaGame/
 
-![[](images/
+![[](assets/images/Figure1_triviagame.png)
