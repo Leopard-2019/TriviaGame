@@ -1,6 +1,6 @@
 TRIVIA GAME
 
-I have created a Trivia game using JavaScript for the logic and jQuery to manipulate HTML. This is how this game works:
+I have created a Trivia game about baseball using JavaScript for the logic and jQuery to manipulate HTML. This is how this game works:
 
 
 1. The game shows only one question until the player answers it or their time runs out.
