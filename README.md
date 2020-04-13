@@ -7,7 +7,7 @@ I have created a Trivia game about baseball using JavaScript for the logic and j
 
       ![](assets/images/Figure1_triviagame.png)
 
-2. If the player selects the correct answer, the correct answer is displayed anyway with a video related to it A continue button has been  created so the player can watch the video is desired, and the then click the this button so the next question is displayed.
+2. If the player selects the correct answer, a new page is prompted saying that answer was correct, and a video related with the answer is displayed. Also, this page provides an update of the numbers of correct and incorrect answers selected by the player. A continue button has been created so the player can watch the video is desired, and the then click the this button so the next question is displayed.
    
      ![](assets/images/Figure2_triviagame.png)
 
