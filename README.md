@@ -5,8 +5,12 @@ I have created a Trivia game about baseball using JavaScript for the logic and j
 
 1. The game shows only one question until the player answers it or their time runs out.
 
+      ![](assets/images/Figure1_triviagame.png)
+
 2. If the player selects the correct answer, show a screen congratulating them for choosing the right option. After a 
    few seconds, display the next question.
+   
+     ![](assets/images/Figure2_triviagame.png)
 
 3. The scenario is similar for wrong answers and time-outs.
 
@@ -16,6 +20,8 @@ I have created a Trivia game about baseball using JavaScript for the logic and j
     in the above item.
 
 4. On the final screen, the number of correct answers, incorrect answers, and an option to restart the game are displayed.
+
+       ![](assets/images/Figure3_triviagame.png)
 
 This app can be accessed by this link: https://leopard-2019.github.io/TriviaGame/
 
