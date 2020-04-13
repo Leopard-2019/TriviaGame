@@ -1,7 +1,6 @@
-TRIVIA GAME - ADVANCED ASSIGNMENT #5.
+**#TRIVIA GAME**
 
-In this assignment, I have created a Trivia game using JavaScript for the logic and jQuery to manipulate HTML. 
-This is how this game works:
+I have created a Trivia game about baseball using JavaScript for the logic and jQuery to manipulate HTML. This is how this game works:
 
 
 1. The game shows only one question until the player answers it or their time runs out.
@@ -17,3 +16,5 @@ This is how this game works:
     in the above item.
 
 4. On the final screen, the number of correct answers, incorrect answers, and an option to restart the game are displayed.
+
+This app can be accessed by this link: https://leopard-2019.github.io/TriviaGame/
