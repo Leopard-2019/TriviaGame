@@ -17,9 +17,9 @@ The game is a trivia game with questions employing a basebal theme. It consists 
 3. The scenario is similar for time-outs.
 
 
-4. Once the final question is answered, a page is prompted containing not only the video related to the corect answers, but also the final stats of the player. An option to restart the game is displayed as well.
+4. Once the final question is answered, a page is prompted containing not only the video related to the correct answers, but also the final stats of the player. An option to restart the game is displayed as well.
 
-  ![](assets/images/Figure2_triviagame.png)
+  ![](assets/images/Figure3_triviagame.png)
 
 This project is deployed at https://leopard-2019.github.io/TriviaGame/
 
