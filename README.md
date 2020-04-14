@@ -1,22 +1,25 @@
 **#TRIVIA GAME**
 
-I have created a Trivia game about baseball using JavaScript for the logic and jQuery to manipulate HTML. This is how this game works:
+This repository is for a Javascript game, using Jquery Bootstrap styling, including buttons, and setInterval functionality. The game contains a Javascript file to run the game, an html and css file, and images used in the game. The styling is created through the use of bootstrap, a css file, and within the html file.
+
+The game is a trivia game with questions employing a basebal theme. It consists of seven questions, displayed one at a time; each one must be answered in 15 seconds.
 
 
-1. The game shows only one question until the player answers it or their time runs out.
+1. Game starts when the player clicks the start button. A multiple-choice question is displayed, with a time counter.After the user answers, a new page is prompted, containing a video related with the answer, and also the player's stats, i.e,  the number of right, and wrong questions.
 
       ![](assets/images/Figure1_triviagame.png)
 
-2. If the player selects the correct answer, a new page is prompted saying that answer was correct, and a video related with the answer is displayed. Also, this page provides an update of the numbers of correct and incorrect answers selected by the player. A continue button has been created so the player can watch the video is desired, and the then click the this button so the next question is displayed.
+2. After the user answers, a new page is prompted, containing a video related with the answer, and also the player's stats, i.e,  the number of right, and wrong questions.
+
    
      ![](assets/images/Figure2_triviagame.png)
 
-3. The scenario is similar for wrong answers and time-outs.
+3. The scenario is similar for time-outs.
 
 
-4. On the final screen, the number of correct answers, incorrect answers, and an option to restart the game are displayed.
+4. Once the final question is answered, a page is prompted containing not only the video related to the corect answers, but also the final stats of the player. An option to restart the game is displayed as well.
 
        ![](assets/images/Figure3_triviagame.png)
 
-This app can be accessed by this link: https://leopard-2019.github.io/TriviaGame/
+This project is deployed at https://leopard-2019.github.io/TriviaGame/
 
