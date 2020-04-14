@@ -1,4 +1,4 @@
-**# TRIVIA GAME**
+#**TRIVIA GAME**#
 
 This repository is for a Javascript game, using Jquery Bootstrap styling, including buttons, and setInterval functionality. The game contains a Javascript file to run the game, an html and css file, and images used in the game. The styling is created through the use of bootstrap, a css file, and within the html file.
 
