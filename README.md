@@ -1,6 +1,6 @@
 # TRIVIA GAME #
 
-This repository is for a Javascript game, using Jquery Bootstrap styling, including buttons, and setInterval functionality. The game contains a Javascript file to run the game, an html and css file, and images used in the game. The styling is created through the use of bootstrap, a css file, and within the html file.
+This repository is for a Javascript game, using jQuery Bootstrap styling, including buttons, and setInterval functionality. The game contains a Javascript file to run the game, an html and css file, and images used in the game. The styling is created through the use of bootstrap, a css file, and within the html file.
 
 The game is a trivia game with questions employing a basebal theme. It consists of seven questions, displayed one at a time; each one must be answered in 15 seconds.
 
